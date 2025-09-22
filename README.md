@@ -46,10 +46,10 @@ Includes:
   `Small ($5)` — `Medium ($10)` — `Large ($15)`
 
 - **🍞 Crust Type** (RadioButtons or ComboBox):  
-  `Thin Crust ($5)` — `Thick Crust ($7)` — `Stuffed Crust ($9)`
+  `Thin Crust ($5)` — `Thick Crust ($10)`
 
 - **🧄 Toppings** (Checkboxes):  
-  `Pepperoni (+$2)` — `Mushrooms (+$1.5)` — `Olives (+$1)` — `Extra Cheese (+$2)`
+  `Mushrooms (+$8)` — `Olives (+$5)` — `Extra Cheese (+$5)` — `Onion (+$2)` — `Green Peppers (+$4)` —  `Tomatoes (+$2)`
 
 - **📍 Dine Option** (RadioButtons):  
   `Eat In` — `Take Away`
