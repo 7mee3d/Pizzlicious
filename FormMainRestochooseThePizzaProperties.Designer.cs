@@ -307,6 +307,7 @@
             // buttonOrderNow
             // 
             this.buttonOrderNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
+            this.buttonOrderNow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOrderNow.FlatAppearance.BorderSize = 0;
             this.buttonOrderNow.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonOrderNow.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,6 +323,7 @@
             // buttonReset
             // 
             this.buttonReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
+            this.buttonReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonReset.FlatAppearance.BorderSize = 0;
             this.buttonReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReset.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,6 +341,7 @@
             this.pictureBoxBackPrevPage.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxBackPrevPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxBackPrevPage.BackgroundImage")));
             this.pictureBoxBackPrevPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxBackPrevPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxBackPrevPage.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBackPrevPage.Image")));
             this.pictureBoxBackPrevPage.Location = new System.Drawing.Point(56, 769);
             this.pictureBoxBackPrevPage.Name = "pictureBoxBackPrevPage";

@@ -138,6 +138,7 @@
             // 
             // buttonCheakOut
             // 
+            this.buttonCheakOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCheakOut.Font = new System.Drawing.Font("Britannic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCheakOut.Location = new System.Drawing.Point(372, 810);
             this.buttonCheakOut.Name = "buttonCheakOut";
@@ -175,6 +176,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(316, 812);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 43);
