@@ -19,7 +19,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         int priceToppingPizza = 0;
         int totalPrice = 0;
         string choiceSizePiizaFinal = "";
-        string[] choiceToppingPizza =new string[6] ; 
+        string[] choiceToppingPizza = new string[6] ; 
         string choiceCrustPizza = ""; 
         string choiceWhereToEatPizza  = ""; 
 
@@ -145,67 +145,122 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void checkBoxExtraCheese_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxExtraCheese.Checked) priceToppingPizza += 5;
+            if (checkBoxExtraCheese.Checked)
+            {
+
+                priceToppingPizza += 5;
+                choiceToppingPizza[0] = "Extra Cheese" + Environment.NewLine;
+            }
             else
+            {
                 priceToppingPizza -= 5;
+                choiceToppingPizza[0] = "";
+
+            }
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceToppingPizza[0] = "Extra Cheese" + Environment.NewLine;
+            
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
         private void checkBoxOnion_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxOnion.Checked) priceToppingPizza += 2;
+            if (checkBoxOnion.Checked)
+            {
+
+                priceToppingPizza += 2;
+                choiceToppingPizza[1] = "Onion" + Environment.NewLine;
+
+            }
             else
-                priceToppingPizza -=2 ;
+            {
+                priceToppingPizza -= 2;
+                choiceToppingPizza[1] = "";
+
+            }
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceToppingPizza[1] = "Onion" + Environment.NewLine;
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
         private void checkBoxMushrooms_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxMushrooms.Checked) priceToppingPizza += 8;
+            if (checkBoxMushrooms.Checked)
+            {
+
+                priceToppingPizza += 8;
+                choiceToppingPizza[2] = "Mushrooms" + Environment.NewLine;
+
+            }
             else
+            {
                 priceToppingPizza -= 8;
+                choiceToppingPizza[2] = "";
+
+            }
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceToppingPizza[2] = "Mushrooms" + Environment.NewLine;
 
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
         private void checkBoxOlives_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxOlives.Checked) priceToppingPizza += 5;
+            if (checkBoxOlives.Checked)
+            {
+
+                priceToppingPizza += 5;
+                choiceToppingPizza[3] = "Olives" + Environment.NewLine;
+
+
+            }
             else
+            {
                 priceToppingPizza -= 5;
+                choiceToppingPizza[3] = "";
+
+            }
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceToppingPizza[3] = "Olives" + Environment.NewLine;
 
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
         private void checkBoxTomatoes_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxTomatoes.Checked) priceToppingPizza += 2;
+            if (checkBoxTomatoes.Checked)
+            {
+
+                priceToppingPizza += 2;
+                choiceToppingPizza[4] = "Tomatoes" + Environment.NewLine;
+
+            }
             else
+            {
                 priceToppingPizza -= 2;
+                choiceToppingPizza[4] = "";
+
+            }
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceToppingPizza[4] = "Tomatoes" + Environment.NewLine;
 
             labelTotalPrice.Text = (totalPrice.ToString())+'$';
         }
 
         private void checkBoxGreenPeppers_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxGreenPeppers.Checked) priceToppingPizza += 4;
+            if (checkBoxGreenPeppers.Checked)
+            {
+
+                priceToppingPizza += 4;
+                choiceToppingPizza[5] = "Green Pappers" + Environment.NewLine;
+
+            }
             else
+            {
                 priceToppingPizza -= 4;
+                choiceToppingPizza[5] ="";
+
+            }
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceToppingPizza[5] = "Green Pappers" + Environment.NewLine;
 
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }

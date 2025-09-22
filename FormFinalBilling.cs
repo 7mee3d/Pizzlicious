@@ -67,11 +67,22 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             labelResultSizePizza.Text = _StrSizePizza;
             labelResultCrustTypePizza.Text = _StrCrustTypePizza;
 
-            for (int x = 0; x < _StrToppingsPizza.Length; x += 1)
-            {
-                labelResultToppings.Text += _StrToppingsPizza[x];
-            }
            
+            /*  for (int x = 0; x < _StrToppingsPizza.Length; x += 1)
+           {
+               labelResultToppings.Text = string.Join("", _StrToppingsPizza.Where(Toppings => !string.IsNullOrEmpty(Toppings)));
+
+           }
+           */
+
+
+            foreach (string toppings in _StrToppingsPizza)
+            {
+                if (!string.IsNullOrEmpty(toppings))
+                {
+                    labelResultToppings.Text += toppings;
+                }
+            }
             labelResultWhereToEat.Text = _StrWhereToEatPizza;
             labelTotalPriceBilling.Text = _StrTotalPrice;
 
@@ -83,11 +94,22 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             System.IO.StreamWriter SW = new System.IO.StreamWriter("DataRestoShadweOrders.txt", true);
 
-            string InfoOneOrder = Environment.NewLine+"-----------------------------------------"+ Environment.NewLine + "Size Pizza : " + _StrSizePizza + Environment.NewLine
+            string InfoOneOrder = Environment.NewLine
+                + Environment.NewLine
+                +"------------------- +Order Pizza+ ------------------"
+                
+                + Environment.NewLine
+                + Environment.NewLine 
+                +"Date Time Order : " + DateTime.Now.ToString() +Environment.NewLine 
+                + "Size Pizza : " + _StrSizePizza + Environment.NewLine
                 + "Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
                 + "Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
                 + "Price This Order = " + _StrTotalPrice + Environment.NewLine
-                + "Toggings : " + _StrToppingsPizza + Environment.NewLine + "-----------------------------------------" + Environment.NewLine ;
+                + "Toggings : " + labelResultToppings.Text 
+                + Environment.NewLine
+
+                + "---------------------------------------------------" 
+                + Environment.NewLine ;
 
             SW.WriteLine(InfoOneOrder);
 
