@@ -368,7 +368,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMainRestochooseThePizzaProperties";
-            this.Text = "FormMainRestochooseThePizzaProperties";
+            this.Text = "Ingerdients Matters PizzaLicious";
             this.Load += new System.EventHandler(this.FormMainRestochooseThePizzaProperties_Load);
             this.Move += new System.EventHandler(this.FormMainRestochooseThePizzaProperties_Move);
             this.Resize += new System.EventHandler(this.FormMainRestochooseThePizzaProperties_Resize);

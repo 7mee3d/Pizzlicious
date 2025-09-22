@@ -206,7 +206,7 @@
             this.MinimizeBox = false;
             this.Name = "FormFinalBilling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormFinalBilling";
+            this.Text = "Final Bill Selected Orders";
             this.Load += new System.EventHandler(this.FormFinalBilling_Load);
             this.Move += new System.EventHandler(this.FormFinalBilling_Move);
             this.Resize += new System.EventHandler(this.FormFinalBilling_Resize);

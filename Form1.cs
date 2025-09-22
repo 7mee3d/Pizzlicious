@@ -30,7 +30,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         }
         private void rdbtnNextImage2_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("Pizzlicious\\AboutUs.png");
+            this.BackgroundImage = Image.FromFile(@"Pizzlicious\AboutUs.png");
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
             rdBtnImage1.Enabled = false; 
@@ -51,7 +51,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void rdbtnNextImage3_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("Pizzlicious\\TabelMenu.png");
+            this.BackgroundImage = Image.FromFile(@"Pizzlicious\TabelMenu.png");
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
             rdbtnNextImage2.Enabled = false;
@@ -66,9 +66,12 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
             FormMainRestochooseThePizzaProperties FormMainChooseProperty = new FormMainRestochooseThePizzaProperties();
 
-            FormMainChooseProperty.ShowDialog(); 
+            FormMainChooseProperty.ShowDialog();
+           
+
         }
 
         private void Form1_Move(object sender, EventArgs e)
@@ -80,6 +83,12 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         private void Form1_Resize(object sender, EventArgs e)
         {
             setFormFixedRezizeAndMove();
+
+        }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e) {
+
+            Application.Exit();
 
         }
     }
