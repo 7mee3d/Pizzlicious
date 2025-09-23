@@ -24,9 +24,11 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         string choiceWhereToEatPizza  = ""; 
 
 
-        protected void setInitControlsFoodRestuarnt ()
+        protected void setInitControlsFoodRestuarnt (/*Control PaerantControls*/ )
         {
-            radioButtonSmall.Checked = false;
+
+
+         /*   radioButtonSmall.Checked = false;
             radioButtonMid.Checked = false;
             radioButtonLarge.Checked = false;
             radioButtonThinPizza.Checked = false;
@@ -41,13 +43,51 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             radioButtonThinkPizza.Checked = false;
             radioButtonEatIn.Checked = false;
             radioButtonTakeOut.Checked = false;
-            choiceSizePiizaFinal = "";
+         */
+            /*
+            foreach (Control con in PaerantControls.Controls)
+            {
+                if(con is RadioButton RB)
+                {
+                    RB.Checked = false;
+                }if (con is CheckBox CB)
+                {
+                    CB.Checked = false;
+
+                }
+
+                if (con.HasChildren) // Has Clidren (Panal or GroupBox ) --> Group Bix include cheak box or readio Button  (Recsuon)
+                    setInitControlsFoodRestuarnt(con);
+            }
+
+            */
+
+
+            // Change inside the Every Group Box 
+
+            foreach (Control con in this.Controls )
+            {
+
+                if(con is GroupBox GB)
+                {
+
+                    foreach (Control inner in GB.Controls) // Control in the Group Box 
+                    {
+                        if (inner is RadioButton RB) // Avoid the Casting Control -> ((RadioButton)con).Check  = false ; Equal -> inner is RedioButton RB 
+                            RB.Checked = false;
+
+                        if (inner is CheckBox CB)
+                            CB.Checked = false; 
+                    }
+                }
+            }
 
             for (int i = 0; i < choiceToppingPizza.Length; i += 1)
                 choiceToppingPizza[i] = "";
 
             choiceCrustPizza = "";
             choiceWhereToEatPizza = "";
+            choiceSizePiizaFinal = "";
 
             priceToppingPizza = 0;
             priceCrustPizza = 0;
@@ -120,7 +160,8 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void FormMainRestochooseThePizzaProperties_Load(object sender, EventArgs e)
         {
-            radioButtonSmall.Checked = true;
+
+            labelTotalPrice.Text = totalPrice.ToString() + "$";
             buttonOrderNow.BackColor = Color.FromArgb(255, 55, 8, 8); 
         }
 
@@ -267,7 +308,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void button2_Click(object sender, EventArgs e)
         {
-            setInitControlsFoodRestuarnt();
+            setInitControlsFoodRestuarnt(/*this*/);
 
         }
 
@@ -282,11 +323,15 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void buttonOrderNow_Click(object sender, EventArgs e)
         {
-            FormFinalBilling FinalBillingForm = new FormFinalBilling(choiceSizePiizaFinal , choiceCrustPizza , choiceToppingPizza ,  choiceWhereToEatPizza , totalPrice.ToString());
+
+          
+            FormFinalBilling FinalBillingForm = new FormFinalBilling(choiceSizePiizaFinal , choiceCrustPizza , choiceToppingPizza ,  choiceWhereToEatPizza , totalPrice.ToString() , this);
 
             FinalBillingForm.BackgroundImage = Image.FromFile("Pizzlicious\\FinalBilling.png");
 
-            FinalBillingForm.ShowDialog(); 
+            FinalBillingForm.ShowDialog();
+
+            setInitControlsFoodRestuarnt();
         }
 
         private void radioButtonEatIn_CheckedChanged(object sender, EventArgs e)
@@ -295,13 +340,9 @@ namespace Mini_Project___Pizza_Resto_Shodwe
                 choiceWhereToEatPizza = "Eat In" ;
           
 
-
         }
 
-        private void groupBoxSize_Enter(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void radioButtonTakeOut_CheckedChanged(object sender, EventArgs e)
         {

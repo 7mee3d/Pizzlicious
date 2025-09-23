@@ -74,7 +74,6 @@
             this.groupBoxSize.TabIndex = 0;
             this.groupBoxSize.TabStop = false;
             this.groupBoxSize.Text = "Size Pizza";
-            this.groupBoxSize.Enter += new System.EventHandler(this.groupBoxSize_Enter);
             // 
             // radioButtonLarge
             // 
@@ -121,6 +120,7 @@
             this.labelTotalPrice.Name = "labelTotalPrice";
             this.labelTotalPrice.Size = new System.Drawing.Size(69, 71);
             this.labelTotalPrice.TabIndex = 1;
+            this.labelTotalPrice.Tag = "00";
             this.labelTotalPrice.Text = "0";
             this.labelTotalPrice.Click += new System.EventHandler(this.labelTotalPrice_Click);
             // 

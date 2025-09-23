@@ -17,19 +17,23 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
     public partial class FormFinalBilling : Form
     {
-
          private string _StrSizePizza = "";
         private string _StrCrustTypePizza  = "";
         private string []_StrToppingsPizza  ;
         private string _StrWhereToEatPizza  = "";
         private string _StrTotalPrice = "";
+       static  int  numberOrders = 0;
+
+
+        private FormMainRestochooseThePizzaProperties _frmMainMenuResto; 
+
         private void setFormFixedRezizeAndMove()
         {
 
             int xWidth = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
             int yHeight = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
 
-            this.Location = new Point(xWidth, yHeight);
+            this.Location = new Point(xWidth -300 , yHeight);
 
             this.Size = new Size(615, 930);
 
@@ -43,21 +47,45 @@ namespace Mini_Project___Pizza_Resto_Shodwe
                 _StrToppingsPizza[i] = "";
 
             _StrWhereToEatPizza = "";
-            _StrTotalPrice = "";
+            _StrTotalPrice = "0";
+
+     
         }
-        public FormFinalBilling(string SizePizza , string CrustTypePizza , string[] ToppingsPizza , string WhereToEatPizza , string totalPricePizza ) 
+        public FormFinalBilling(string SizePizza , string CrustTypePizza , string[] ToppingsPizza , string WhereToEatPizza , string totalPricePizza , FormMainRestochooseThePizzaProperties FrmMainRetoMenu  ) 
         {
             InitializeComponent();
-
-            _StrSizePizza = SizePizza;
-            _StrCrustTypePizza = CrustTypePizza;
-            _StrToppingsPizza  = ToppingsPizza;
-            _StrWhereToEatPizza = WhereToEatPizza;
-            _StrTotalPrice = totalPricePizza; 
-
             
+                _StrSizePizza = SizePizza;
+                _StrCrustTypePizza = CrustTypePizza;
+                _StrToppingsPizza = ToppingsPizza;
+                _StrWhereToEatPizza = WhereToEatPizza;
+                _StrTotalPrice = totalPricePizza;
+                _frmMainMenuResto = FrmMainRetoMenu;
+                isDoneOrder = true;
+
         }
 
+        private void resetAllControlsInForm (Form frmForm)
+        {
+            foreach (Control con in frmForm.Controls )
+            {
+
+                if(con is GroupBox GB )
+                {
+                    foreach (Control innerCon in GB.Controls)
+                    {
+                        if (innerCon is RadioButton RB)
+                            RB.Checked = false;
+
+                        if (innerCon is CheckBox CB)
+                            CB.Checked = false; 
+                    }
+                }
+              
+            }
+
+
+        }
         private void FormFinalBilling_Load(object sender, EventArgs e)
         {
 
@@ -67,7 +95,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             labelResultSizePizza.Text = _StrSizePizza;
             labelResultCrustTypePizza.Text = _StrCrustTypePizza;
 
-           
+
             /*  for (int x = 0; x < _StrToppingsPizza.Length; x += 1)
            {
                labelResultToppings.Text = string.Join("", _StrToppingsPizza.Where(Toppings => !string.IsNullOrEmpty(Toppings)));
@@ -75,20 +103,29 @@ namespace Mini_Project___Pizza_Resto_Shodwe
            }
            */
 
-
+            int count = 0; 
             foreach (string toppings in _StrToppingsPizza)
             {
                 if (!string.IsNullOrEmpty(toppings))
                 {
                     labelResultToppings.Text += toppings;
+                    ++count;
+
                 }
+
             }
+
+            if(count ==0  )
+                labelResultToppings.Text = "No Toppings";
+
             labelResultWhereToEat.Text = _StrWhereToEatPizza;
             labelTotalPriceBilling.Text = _StrTotalPrice;
 
+
+           
         }
 
-    
+      
         private void buttonCheakOut_Click(object sender, EventArgs e)
         {
 
@@ -96,19 +133,19 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             string InfoOneOrder = Environment.NewLine
                 + Environment.NewLine
-                +"------------------- +Order Pizza+ ------------------"
+                +"------------------- +Order Pizza+ ------------------------"
                 
                 + Environment.NewLine
                 + Environment.NewLine 
-                +"Date Time Order : " + DateTime.Now.ToString() +Environment.NewLine 
-                + "Size Pizza : " + _StrSizePizza + Environment.NewLine
-                + "Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
-                + "Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
-                + "Price This Order = " + _StrTotalPrice + Environment.NewLine
-                + "Toggings : " + labelResultToppings.Text 
+                + "+ Date Time Order : " + DateTime.Now.ToString() + " - Order .NO : " +  ++numberOrders  + Environment.NewLine 
+                + "+ Size Pizza : " + _StrSizePizza + Environment.NewLine
+                + "+ Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
+                + "+ Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
+                + "+ Price This Order = " + _StrTotalPrice + Environment.NewLine
+                + "+ Toggings : " + labelResultToppings.Text 
                 + Environment.NewLine
 
-                + "---------------------------------------------------" 
+                + "---------------------------------------------------------" 
                 + Environment.NewLine ;
 
             SW.WriteLine(InfoOneOrder);
@@ -117,9 +154,11 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             MessageBox.Show("The Order Is Done", "Note This Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            ResetAllOrder();
+                ResetAllOrder();
 
-            Application.OpenForms[1].Show();
+                resetAllControlsInForm(_frmMainMenuResto);
+            
+            _frmMainMenuResto.Show();
             this.Close(); 
         }
 
