@@ -331,6 +331,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             FinalBillingForm.ShowDialog();
 
+           
             setInitControlsFoodRestuarnt();
         }
 

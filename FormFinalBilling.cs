@@ -61,7 +61,6 @@ namespace Mini_Project___Pizza_Resto_Shodwe
                 _StrWhereToEatPizza = WhereToEatPizza;
                 _StrTotalPrice = totalPricePizza;
                 _frmMainMenuResto = FrmMainRetoMenu;
-                isDoneOrder = true;
 
         }
 
