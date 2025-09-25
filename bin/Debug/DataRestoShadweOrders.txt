@@ -1,0 +1,29 @@
+
+
+------------------- +Order Pizza+ ------------------------
+
++ Date Time Order : 9/25/2025 2:46:03 PM - Order .NO : 1
++ Size Pizza : Medium
++ Crust Type Pizza : Think
++ Where Eat Pizza : Take Out
++ Price This Order = 35
++ Toggings : Extra Cheese
+Onion
+Mushrooms
+
+---------------------------------------------------------
+
+
+
+------------------- +Order Pizza+ ------------------------
+
++ Date Time Order : 9/25/2025 2:46:43 PM - Order .NO : 2
++ Size Pizza : Large
++ Crust Type Pizza : Thin
++ Where Eat Pizza : 
++ Price This Order = 26
++ Toggings : Tomatoes
+Green Pappers
+
+---------------------------------------------------------
+
