@@ -122,7 +122,6 @@
             this.labelTotalPrice.TabIndex = 1;
             this.labelTotalPrice.Tag = "00";
             this.labelTotalPrice.Text = "0";
-            this.labelTotalPrice.Click += new System.EventHandler(this.labelTotalPrice_Click);
             // 
             // groupBoxCrustType
             // 
@@ -175,6 +174,7 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Britannic Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.groupBox1.Location = new System.Drawing.Point(1019, 216);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(340, 230);

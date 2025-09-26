@@ -130,29 +130,51 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             System.IO.StreamWriter SW = new System.IO.StreamWriter("DataRestoShadweOrders.txt", true);
 
-            string InfoOneOrder = Environment.NewLine
-                + Environment.NewLine
-                +"------------------- +Order Pizza+ ------------------------"
+            string InfoOneOrder =
                 
+                  Environment.NewLine
                 + Environment.NewLine
-                + Environment.NewLine 
-                + "+ Date Time Order : " + DateTime.Now.ToString() + " - Order .NO : " +  ++numberOrders  + Environment.NewLine 
-                + "+ Size Pizza : " + _StrSizePizza + Environment.NewLine
-                + "+ Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
-                + "+ Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
-                + "+ Price This Order = " + _StrTotalPrice + Environment.NewLine
-                + "+ Toggings : " + labelResultToppings.Text 
+                + Environment.NewLine
+                + Environment.NewLine
                 + Environment.NewLine
 
-                + "---------------------------------------------------------" 
+                + "--------------------- +Order Pizza+ -----------------------"
+                
+
+                     + Environment.NewLine
+                     + Environment.NewLine
+                     +"                     - Order .NO : " + ++numberOrders + Environment.NewLine + Environment.NewLine
+                     + "       - Date Time Order : " + DateTime.Now.ToString()
+                     + Environment.NewLine
+                     + Environment.NewLine
+
+
+                + "---------------------- +Info Order+ -----------------------"
+                + Environment.NewLine
+                + Environment.NewLine
+
+                     + "+ Size Pizza : " + _StrSizePizza + Environment.NewLine
+                     + "+ Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
+                     + "+ Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
+                     + "+ Price This Order = " + _StrTotalPrice + Environment.NewLine
+                     + "+ Toggings : " + labelResultToppings.Text 
+
+
+                + Environment.NewLine
+                     
+                + "-----------------------------++-----------------------------" 
                 + Environment.NewLine ;
 
+            //Write The Order in the File .TXT
             SW.WriteLine(InfoOneOrder);
 
+            //Close File After store order in the file
             SW.Close();
 
+            // Aleart The Reciption the order is done 
             MessageBox.Show("The Order Is Done", "Note This Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+           
                 ResetAllOrder();
 
                 resetAllControlsInForm(_frmMainMenuResto);

@@ -330,9 +330,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             FinalBillingForm.BackgroundImage = Image.FromFile("Pizzlicious\\FinalBilling.png");
 
             FinalBillingForm.ShowDialog();
-
-           
-            setInitControlsFoodRestuarnt();
+             setInitControlsFoodRestuarnt();
         }
 
         private void radioButtonEatIn_CheckedChanged(object sender, EventArgs e)
@@ -351,9 +349,6 @@ namespace Mini_Project___Pizza_Resto_Shodwe
                 choiceWhereToEatPizza = "Take Out";
         }
 
-        private void labelTotalPrice_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
