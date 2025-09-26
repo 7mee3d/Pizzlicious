@@ -2,6 +2,11 @@
 
 > 🚀 *"WHERE EVERY SLICE TELLS A STORY"* — Because every pizza deserves to be perfect!
 
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D7?style=for-the-badge&logo=windows&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+
 ---
 
 ## 🌟 Project Overview
@@ -27,18 +32,65 @@ Users can select pizza size, crust type, toppings, and dining option — then in
 ---
 
 ## 🖼️ Application Screens (Based on Your Screenshots)
+---
 
-### 1. 🎬 Welcome Screen
+# 1. 🎬 Welcome Screen
+
 
 - Elegant black & gold theme 🖤💛
 - Mouth-watering pizza image 🍕
 - Bold header:  
   > **PIZZA RESTO — PizzLicious**
-- Button: **“Start Your Order!”** ⏩
+
+<img width="1532" height="902" alt="Screenshot 2025-09-25 144449" src="https://github.com/user-attachments/assets/3679d872-3a95-44d6-8a9d-62565ee864ba" />
 
 ---
 
-### 2. 🛒 Order Form
+# 2. ℹ️  About As
+<img width="1549" height="912" alt="Screenshot 2025-09-25 144458" src="https://github.com/user-attachments/assets/d0aed858-4af0-47da-bdfe-84fe5813f49b" />
+
+---
+
+# 3. 💡 Tabel Manu 
+
+<img width="1539" height="916" alt="Screenshot 2025-09-25 144508" src="https://github.com/user-attachments/assets/dd5ce7fc-0471-4887-a6ec-5afd0b9da8eb" />
+
+---
+
+# 4. 📢 Main Screen PizzLicious 
+
+<img width="1549" height="925" alt="Screenshot 2025-09-25 144516" src="https://github.com/user-attachments/assets/7ca6e095-6645-404f-a06c-2f0547bc0a91" />
+
+<img width="1550" height="922" alt="Screenshot 2025-09-25 144532" src="https://github.com/user-attachments/assets/70968531-9bc0-4790-932c-495029a5f166" />
+
+<img width="1546" height="921" alt="Screenshot 2025-09-25 144542" src="https://github.com/user-attachments/assets/4248f97c-cd7b-4dad-98d1-5e439a059b9f" />
+
+---
+
+# 5. 📜 Create Order 
+
+<img width="1546" height="959" alt="Screenshot 2025-09-25 144559" src="https://github.com/user-attachments/assets/7a83041b-bda0-4bc5-b6ee-4cce15590bfa" />
+
+<img width="1558" height="954" alt="Screenshot 2025-09-25 144609" src="https://github.com/user-attachments/assets/126f944b-65e3-413e-9391-105a4908f243" />
+
+---
+
+# 6. 📄🗂️ Save Order in the File `DataRestoShadweOrders`
+
+<img width="1555" height="958" alt="Screenshot 2025-09-25 144624" src="https://github.com/user-attachments/assets/d202bb49-2ff9-481b-958b-b7bac1ae87a7" />
+
+---
+
+# 7.📜 Another Create Order 
+
+<img width="1558" height="965" alt="Screenshot 2025-09-25 144639" src="https://github.com/user-attachments/assets/8b7133aa-def1-49f9-a032-6b61ef78e8d0" />
+
+<img width="1560" height="967" alt="Screenshot 2025-09-25 144656" src="https://github.com/user-attachments/assets/a32241a3-b146-4d97-9e4c-bc2233553f4e" />
+
+---
+
+
+## 2. 🛒 Order Form
 
 Includes:
 
