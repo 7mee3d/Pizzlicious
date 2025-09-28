@@ -34,6 +34,7 @@
             this.rdBtnNextImageMainMenu = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.linkLabelHowToUse = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -122,6 +123,22 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
+            // linkLabelHowToUse
+            // 
+            this.linkLabelHowToUse.ActiveLinkColor = System.Drawing.Color.DarkRed;
+            this.linkLabelHowToUse.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabelHowToUse.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelHowToUse.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabelHowToUse.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
+            this.linkLabelHowToUse.Location = new System.Drawing.Point(1444, 724);
+            this.linkLabelHowToUse.Name = "linkLabelHowToUse";
+            this.linkLabelHowToUse.Size = new System.Drawing.Size(72, 48);
+            this.linkLabelHowToUse.TabIndex = 3;
+            this.linkLabelHowToUse.TabStop = true;
+            this.linkLabelHowToUse.Text = "How To Use";
+            this.linkLabelHowToUse.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
+            this.linkLabelHowToUse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHowToUse_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -129,6 +146,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1528, 860);
+            this.Controls.Add(this.linkLabelHowToUse);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rdBtnImage1);
@@ -157,6 +175,7 @@
         private System.Windows.Forms.RadioButton rdBtnNextImageMainMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.LinkLabel linkLabelHowToUse;
     }
 }
 

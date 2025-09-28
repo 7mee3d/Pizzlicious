@@ -91,5 +91,12 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             Application.Exit();
 
         }
+
+        private void linkLabelHowToUse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabelHowToUse.LinkVisited = true;
+
+            System.Diagnostics.Process.Start(@"https://github.com/7mee3d/Pizzlicious");
+        }
     }
 }
