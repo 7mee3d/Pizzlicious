@@ -71,21 +71,26 @@ Users can select pizza size, crust type, toppings, and dining option — then in
 
 <img width="1546" height="959" alt="Screenshot 2025-09-25 144559" src="https://github.com/user-attachments/assets/7a83041b-bda0-4bc5-b6ee-4cce15590bfa" />
 
-<img width="1558" height="954" alt="Screenshot 2025-09-25 144609" src="https://github.com/user-attachments/assets/126f944b-65e3-413e-9391-105a4908f243" />
+<img width="1538" height="930" alt="Screenshot 2025-10-05 132838" src="https://github.com/user-attachments/assets/cb628ec4-f9af-47cb-a81f-14f4bfcb074a" />
+
 
 ---
 
 # 6. 📄🗂️ Save Order in the File `DataRestoShadweOrders`
 
-<img width="1555" height="958" alt="Screenshot 2025-09-25 144624" src="https://github.com/user-attachments/assets/d202bb49-2ff9-481b-958b-b7bac1ae87a7" />
+<img width="1538" height="930" alt="Screenshot 2025-10-05 132838" src="https://github.com/user-attachments/assets/8cfae6d3-b090-4325-9227-a76e7eda507c" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-10-05 134121" src="https://github.com/user-attachments/assets/a92ab577-f024-42b0-9eb0-d3a423da48a2" />
 
 ---
+
 
 # 7.📜 Another Create Order 
 
 <img width="1558" height="965" alt="Screenshot 2025-09-25 144639" src="https://github.com/user-attachments/assets/8b7133aa-def1-49f9-a032-6b61ef78e8d0" />
 
-<img width="1560" height="967" alt="Screenshot 2025-09-25 144656" src="https://github.com/user-attachments/assets/a32241a3-b146-4d97-9e4c-bc2233553f4e" />
+<img width="1919" height="1079" alt="Screenshot 2025-10-05 134231" src="https://github.com/user-attachments/assets/77f5c019-07d2-4176-846d-a36369228469" />
+
 
 ---
 
