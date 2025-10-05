@@ -5,65 +5,17 @@
 
 --------------------- +Order Pizza+ -----------------------
 
-                     - Order .NO : 1
-
-       - Date Time Order : 9/28/2025 12:36:29 PM
-
----------------------- +Info Order+ -----------------------
-
-+ Size Pizza : Small
-+ Crust Type Pizza : Thin
-+ Where Eat Pizza : Eat In
-+ Price This Order = 25
-+ Toggings : Extra Cheese
-Mushrooms
-Tomatoes
-
------------------------------++-----------------------------
-
-
-
-
-
-
---------------------- +Order Pizza+ -----------------------
-
                      - Order .NO : 2
 
-       - Date Time Order : 9/28/2025 12:37:21 PM
-
----------------------- +Info Order+ -----------------------
-
-+ Size Pizza : Large
-+ Crust Type Pizza : Think
-+ Where Eat Pizza : Take Out
-+ Price This Order = 33
-+ Toggings : Onion
-Tomatoes
-Green Pappers
-
------------------------------++-----------------------------
-
-
-
-
-
-
---------------------- +Order Pizza+ -----------------------
-
-                     - Order .NO : 3
-
-       - Date Time Order : 9/28/2025 12:38:01 PM
+       - Date Time Order : 10/5/2025 1:34:22 PM
 
 ---------------------- +Info Order+ -----------------------
 
 + Size Pizza : Medium
-+ Crust Type Pizza : Think
-+ Where Eat Pizza : Take Out
-+ Price This Order = 46
-+ Toggings : Extra Cheese
-Onion
-Mushrooms
++ Crust Type Pizza : Thin
++ Where Eat Pizza : Eat In
++ Price This Order = 34
++ Toggings : Mushrooms
 Olives
 Tomatoes
 Green Pappers

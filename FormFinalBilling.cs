@@ -125,64 +125,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         }
 
       
-        private void buttonCheakOut_Click(object sender, EventArgs e)
-        {
-
-            System.IO.StreamWriter SW = new System.IO.StreamWriter("DataRestoShadweOrders.txt", true);
-
-            string InfoOneOrder =
-                
-                  Environment.NewLine
-                + Environment.NewLine
-                + Environment.NewLine
-                + Environment.NewLine
-                + Environment.NewLine
-
-                + "--------------------- +Order Pizza+ -----------------------"
-                
-
-                     + Environment.NewLine
-                     + Environment.NewLine
-                     +"                     - Order .NO : " + ++numberOrders + Environment.NewLine + Environment.NewLine
-                     + "       - Date Time Order : " + DateTime.Now.ToString()
-                     + Environment.NewLine
-                     + Environment.NewLine
-
-
-                + "---------------------- +Info Order+ -----------------------"
-                + Environment.NewLine
-                + Environment.NewLine
-
-                     + "+ Size Pizza : " + _StrSizePizza + Environment.NewLine
-                     + "+ Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
-                     + "+ Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
-                     + "+ Price This Order = " + _StrTotalPrice + Environment.NewLine
-                     + "+ Toggings : " + labelResultToppings.Text 
-
-
-                + Environment.NewLine
-                     
-                + "-----------------------------++-----------------------------" 
-                + Environment.NewLine ;
-
-            //Write The Order in the File .TXT
-            SW.WriteLine(InfoOneOrder);
-
-            //Close File After store order in the file
-            SW.Close();
-
-            // Aleart The Reciption the order is done 
-            MessageBox.Show("The Order Is Done", "Note This Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-           
-                ResetAllOrder();
-
-                resetAllControlsInForm(_frmMainMenuResto);
-            
-            _frmMainMenuResto.Show();
-            this.Close(); 
-        }
-
+ 
         private void FormFinalBilling_Move(object sender, EventArgs e)
         {
             setFormFixedRezizeAndMove();
@@ -199,6 +142,64 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             Application.OpenForms[1].Show();
             
             this.Close(); 
+        }
+
+        private void buttonCheakOut_Click(object sender, EventArgs e)
+        {
+            System.IO.StreamWriter SW = new System.IO.StreamWriter("DataRestoShadweOrders.txt", true);
+
+            string InfoOneOrder =
+
+                  Environment.NewLine
+                + Environment.NewLine
+                + Environment.NewLine
+                + Environment.NewLine
+                + Environment.NewLine
+
+                + "--------------------- +Order Pizza+ -----------------------"
+
+
+                     + Environment.NewLine
+                     + Environment.NewLine
+                     + "                     - Order .NO : " + ++numberOrders + Environment.NewLine + Environment.NewLine
+                     + "       - Date Time Order : " + DateTime.Now.ToString()
+                     + Environment.NewLine
+                     + Environment.NewLine
+
+
+                + "---------------------- +Info Order+ -----------------------"
+                + Environment.NewLine
+                + Environment.NewLine
+
+                     + "+ Size Pizza : " + _StrSizePizza + Environment.NewLine
+                     + "+ Crust Type Pizza : " + _StrCrustTypePizza + Environment.NewLine
+                     + "+ Where Eat Pizza : " + _StrWhereToEatPizza + Environment.NewLine
+                     + "+ Price This Order = " + _StrTotalPrice + Environment.NewLine
+                     + "+ Toggings : " + labelResultToppings.Text
+
+
+                + Environment.NewLine
+
+                + "-----------------------------++-----------------------------"
+                + Environment.NewLine;
+
+            //Write The Order in the File .TXT
+            SW.WriteLine(InfoOneOrder);
+
+            //Close File After store order in the file
+            SW.Close();
+
+            notifyIconCheckOutOrder.ShowBalloonTip(1500, "Finial Bill Order", "This Order is Save in the file Orders", ToolTipIcon.Info);
+
+            // Aleart The Reciption the order is done 
+            MessageBox.Show("The Order Is Done", "Note This Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            ResetAllOrder();
+
+            resetAllControlsInForm(_frmMainMenuResto);
+
+            _frmMainMenuResto.Show();
+            this.Close();
         }
     }
 }
