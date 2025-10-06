@@ -7,18 +7,164 @@
 
                      - Order .NO : 2
 
-       - Date Time Order : 10/5/2025 1:39:04 PM
+       - Date Time Order : 10/5/2025 1:41:15 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : Large
++ Crust Type Pizza : Think
++ Where Eat Pizza : Take Out
++ Price This Order = 44
++ Toggings : Mushrooms
+Olives
+Tomatoes
+Green Pappers
+
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 3
+
+       - Date Time Order : 10/5/2025 1:42:25 PM
 
 ---------------------- +Info Order+ -----------------------
 
 + Size Pizza : Medium
 + Crust Type Pizza : Thin
-+ Where Eat Pizza : Eat In
-+ Price This Order = 34
-+ Toggings : Mushrooms
-Olives
++ Where Eat Pizza : Take Out
++ Price This Order = 22
++ Toggings : Extra Cheese
 Tomatoes
-Green Pappers
+
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 10/6/2025 2:30:16 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : 
++ Crust Type Pizza : 
++ Where Eat Pizza : 
++ Price This Order = 0
++ Toggings : No Toppings
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 10/6/2025 2:33:43 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : Large
++ Crust Type Pizza : Thin
++ Where Eat Pizza : Take Out
++ Price This Order = 22
++ Toggings : Tomatoes
+
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 2
+
+       - Date Time Order : 10/6/2025 2:34:19 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : 
++ Crust Type Pizza : 
++ Where Eat Pizza : 
++ Price This Order = 0
++ Toggings : No Toppings
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 10/6/2025 2:35:19 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : 
++ Crust Type Pizza : Thin
++ Where Eat Pizza : Eat In
++ Price This Order = 5
++ Toggings : No Toppings
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 10/6/2025 2:38:56 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : Small
++ Crust Type Pizza : Thin
++ Where Eat Pizza : 
++ Price This Order = 23
++ Toggings : Extra Cheese
+Mushrooms
+
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 10/6/2025 2:40:06 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : Medium
++ Crust Type Pizza : Thin
++ Where Eat Pizza : 
++ Price This Order = 23
++ Toggings : Mushrooms
 
 -----------------------------++-----------------------------
 

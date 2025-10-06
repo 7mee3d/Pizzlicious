@@ -10,3 +10,4 @@ C:\Users\PC\source\repos\Pizzlicious\bin\Debug\Pizzlicious.pdb
 C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.Properties.Resources.resources
 C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.exe
 C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.pdb
+C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.exe.config

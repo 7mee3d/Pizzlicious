@@ -120,8 +120,10 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             labelResultWhereToEat.Text = _StrWhereToEatPizza;
             labelTotalPriceBilling.Text = _StrTotalPrice;
 
+            notifyIconCheckOutOrder.BalloonTipClicked += notifyIconCheckOutOrder_BalloonTipClicked;
 
-           
+
+
         }
 
       
@@ -144,9 +146,18 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             this.Close(); 
         }
 
+        string path = "DataRestoShadweOrders.txt";
+
         private void buttonCheakOut_Click(object sender, EventArgs e)
         {
-            System.IO.StreamWriter SW = new System.IO.StreamWriter("DataRestoShadweOrders.txt", true);
+
+            if (!System.IO.File.Exists(path))
+            {
+                System.IO.File.Create(path).Close(); 
+
+            }
+
+            System.IO.StreamWriter SW = new System.IO.StreamWriter(path, true);
 
             string InfoOneOrder =
 
@@ -200,6 +211,12 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             _frmMainMenuResto.Show();
             this.Close();
+        }
+
+        private async void notifyIconCheckOutOrder_BalloonTipClicked(object sender, EventArgs e)
+        {
+            await Task.Delay(1000);
+            System.Diagnostics.Process.Start(path);
         }
     }
 }

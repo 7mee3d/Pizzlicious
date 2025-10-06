@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pizzlicious.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,7 +31,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         }
         private void rdbtnNextImage2_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile(@"Pizzlicious\AboutUs.png");
+            this.BackgroundImage = Resources.AboutUs; 
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
             rdBtnImage1.Enabled = false; 
@@ -51,7 +52,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void rdbtnNextImage3_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile(@"Pizzlicious\TabelMenu.png");
+            this.BackgroundImage = Resources.TabelMenu;
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
             rdbtnNextImage2.Enabled = false;

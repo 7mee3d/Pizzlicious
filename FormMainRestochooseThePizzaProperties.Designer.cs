@@ -342,7 +342,7 @@
             this.pictureBoxBackPrevPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxBackPrevPage.BackgroundImage")));
             this.pictureBoxBackPrevPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxBackPrevPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxBackPrevPage.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBackPrevPage.Image")));
+            this.pictureBoxBackPrevPage.Image = global::Pizzlicious.Properties.Resources.reply1;
             this.pictureBoxBackPrevPage.Location = new System.Drawing.Point(56, 769);
             this.pictureBoxBackPrevPage.Name = "pictureBoxBackPrevPage";
             this.pictureBoxBackPrevPage.Size = new System.Drawing.Size(62, 70);
@@ -355,7 +355,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Pizzlicious.Properties.Resources.MainMatters;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1528, 860);
             this.Controls.Add(this.pictureBoxBackPrevPage);
