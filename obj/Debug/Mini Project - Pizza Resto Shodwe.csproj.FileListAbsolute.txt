@@ -1,5 +1,4 @@
 C:\Users\PC\Source\Repos\Pizzlicious\obj\Debug\Mini Project - Pizza Resto Shodwe.csproj.AssemblyReference.cache
-C:\Users\PC\Source\Repos\Pizzlicious\obj\Debug\Mini_Project___Pizza_Resto_Shodwe.Form1.resources
 C:\Users\PC\Source\Repos\Pizzlicious\obj\Debug\Mini_Project___Pizza_Resto_Shodwe.FormFinalBilling.resources
 C:\Users\PC\Source\Repos\Pizzlicious\obj\Debug\Mini_Project___Pizza_Resto_Shodwe.FormMainRestochooseThePizzaProperties.resources
 C:\Users\PC\Source\Repos\Pizzlicious\obj\Debug\Mini Project - Pizza Resto Shodwe.csproj.GenerateResource.cache
@@ -11,3 +10,4 @@ C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.Properties.Resources.
 C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.exe
 C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.pdb
 C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Pizzlicious.exe.config
+C:\Users\PC\source\repos\Pizzlicious\obj\Debug\Mini_Project___Pizza_Resto_Shodwe.PizzLicious.resources

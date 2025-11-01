@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Mini_Project___Pizza_Resto_Shodwe;
+using Pizzlicious.Properties;
 
 namespace Mini_Project___Pizza_Resto_Shodwe
 {
@@ -88,7 +89,8 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         private void FormFinalBilling_Load(object sender, EventArgs e)
         {
 
-            this.BackgroundImage = Image.FromFile("Pizzlicious\\FinalBilling.png");
+           // this.BackgroundImage = Resources.FinalBilling; 
+
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
             labelResultSizePizza.Text = _StrSizePizza;
@@ -146,7 +148,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             this.Close(); 
         }
 
-        string path = "DataRestoShadweOrders.txt";
+        string path = @"../../Data Orders Pizzlicious/DataRestoShadweOrders.txt";
 
         private void buttonCheakOut_Click(object sender, EventArgs e)
         {
@@ -215,8 +217,16 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private async void notifyIconCheckOutOrder_BalloonTipClicked(object sender, EventArgs e)
         {
+            string fullPathFileOrders = System.IO.Path.GetFullPath(path);
             await Task.Delay(1000);
-            System.Diagnostics.Process.Start(path);
+            if (System.IO.File.Exists(path))
+                System.Diagnostics.Process.Start("explorer.exe", fullPathFileOrders);
+            else
+                MessageBox.Show(
+                    "The File Not Found"
+                    , "Error! File Not Found"
+                    , MessageBoxButtons.OK
+                    , MessageBoxIcon.Error);
         }
     }
 }

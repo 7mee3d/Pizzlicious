@@ -1,6 +1,6 @@
 ﻿namespace Mini_Project___Pizza_Resto_Shodwe
 {
-    partial class Form1
+    partial class PizzLicious
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PizzLicious));
             this.rdBtnImage1 = new System.Windows.Forms.RadioButton();
             this.rdbtnNextImage2 = new System.Windows.Forms.RadioButton();
             this.rdBtnNextImageMainMenu = new System.Windows.Forms.RadioButton();
@@ -117,7 +117,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Pizzlicious.Properties.Resources.logout;
+            this.pictureBox2.Image = global::Pizzlicious.Properties.Resources.reply1;
             this.pictureBox2.Location = new System.Drawing.Point(33, 787);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 61);

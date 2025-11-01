@@ -160,7 +160,6 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void FormMainRestochooseThePizzaProperties_Load(object sender, EventArgs e)
         {
-
             labelTotalPrice.Text = totalPrice.ToString() + "$";
             buttonOrderNow.BackColor = Color.FromArgb(255, 55, 8, 8); 
         }
@@ -315,8 +314,6 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         private void pictureBoxBackPrevPage_Click(object sender, EventArgs e)
         {
             Application.OpenForms[0].Show();
-
-            
             this.Close();
 
         }
@@ -324,10 +321,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         private void buttonOrderNow_Click(object sender, EventArgs e)
         {
 
-          
             FormFinalBilling FinalBillingForm = new FormFinalBilling(choiceSizePiizaFinal , choiceCrustPizza , choiceToppingPizza ,  choiceWhereToEatPizza , totalPrice.ToString() , this);
-
-            FinalBillingForm.BackgroundImage = Image.FromFile("Pizzlicious\\FinalBilling.png");
 
             FinalBillingForm.ShowDialog();
              setInitControlsFoodRestuarnt();

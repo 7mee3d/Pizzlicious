@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Mini_Project___Pizza_Resto_Shodwe
 {
-    public partial class Form1 : Form
+    public partial class PizzLicious : Form
     {
-        public Form1()
+        public PizzLicious()
         {
             InitializeComponent();
         }

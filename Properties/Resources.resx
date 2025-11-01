@@ -130,9 +130,6 @@
   <data name="reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Form Final Billl2 " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Form Final Billl2 .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TabelMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\Pizzlicious\TabelMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

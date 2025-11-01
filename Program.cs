@@ -16,7 +16,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new PizzLicious());
         }
     }
 }
