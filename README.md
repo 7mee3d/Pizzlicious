@@ -17,6 +17,11 @@ Users can select pizza size, crust type, toppings, and dining option — then in
 
 🎯 Perfect for academic projects, portfolio showcases, or as a foundation for a real restaurant system!
 
+**You can watch the full project explanation in the video:**
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=eJkE0VAz6jA)
+
+
 ---
 
 ## 🎁 Key Features
