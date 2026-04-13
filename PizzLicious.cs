@@ -31,10 +31,10 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         }
         private void rdbtnNextImage2_CheckedChanged(object sender, EventArgs e)
         {
-            this.BackgroundImage = Resources.AboutUs; 
+            this.BackgroundImage = Resources.AboutUs;
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
-            rdBtnImage1.Enabled = false; 
+            rdBtnImage1.Enabled = false;
 
 
         }
@@ -43,9 +43,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         {
             rdBtnImage1.AutoSize = false;
             rdBtnImage1.Size = new Size(30, 30);
-            rdBtnImage1.Height = 50; 
-           // this.BackgroundImage = Image.FromFile("Pizzlicious\\WelcomePage.png");
-           // this.BackgroundImageLayout = ImageLayout.Zoom;
+            rdBtnImage1.Height = 50;
             rdBtnImage1.Enabled = false;
 
         }
@@ -56,7 +54,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
             rdbtnNextImage2.Enabled = false;
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -71,7 +69,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             FormMainRestochooseThePizzaProperties FormMainChooseProperty = new FormMainRestochooseThePizzaProperties();
 
             FormMainChooseProperty.ShowDialog();
-           
+
 
         }
 
@@ -87,7 +85,8 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         }
 
-        private void pictureBoxExit_Click(object sender, EventArgs e) {
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
 
             Application.Exit();
 

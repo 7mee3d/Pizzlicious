@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pizzlicious.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,31 +20,31 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         int priceToppingPizza = 0;
         int totalPrice = 0;
         string choiceSizePiizaFinal = "";
-        string[] choiceToppingPizza = new string[6] ; 
-        string choiceCrustPizza = ""; 
-        string choiceWhereToEatPizza  = ""; 
+        string[] choiceToppingPizza = new string[6];
+        string choiceCrustPizza = "";
+        string choiceWhereToEatPizza = "";
 
 
-        protected void setInitControlsFoodRestuarnt (/*Control PaerantControls*/ )
+        protected void setInitControlsFoodRestuarnt(/*Control PaerantControls*/ )
         {
 
 
-         /*   radioButtonSmall.Checked = false;
-            radioButtonMid.Checked = false;
-            radioButtonLarge.Checked = false;
-            radioButtonThinPizza.Checked = false;
-            radioButtonEatIn.Checked = false;
-            checkBoxMushrooms.Checked = false;
-            checkBoxExtraCheese.Checked = false; 
-            checkBoxOlives.Checked = false; 
-            checkBoxOnion.Checked = false; 
-            checkBoxTomatoes.Checked = false; 
-            checkBoxGreenPeppers.Checked = false;
-            radioButtonThinPizza.Checked = false;
-            radioButtonThinkPizza.Checked = false;
-            radioButtonEatIn.Checked = false;
-            radioButtonTakeOut.Checked = false;
-         */
+            /*   radioButtonSmall.Checked = false;
+               radioButtonMid.Checked = false;
+               radioButtonLarge.Checked = false;
+               radioButtonThinPizza.Checked = false;
+               radioButtonEatIn.Checked = false;
+               checkBoxMushrooms.Checked = false;
+               checkBoxExtraCheese.Checked = false; 
+               checkBoxOlives.Checked = false; 
+               checkBoxOnion.Checked = false; 
+               checkBoxTomatoes.Checked = false; 
+               checkBoxGreenPeppers.Checked = false;
+               radioButtonThinPizza.Checked = false;
+               radioButtonThinkPizza.Checked = false;
+               radioButtonEatIn.Checked = false;
+               radioButtonTakeOut.Checked = false;
+            */
             /*
             foreach (Control con in PaerantControls.Controls)
             {
@@ -65,10 +66,10 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
             // Change inside the Every Group Box 
 
-            foreach (Control con in this.Controls )
+            foreach (Control con in this.Controls)
             {
 
-                if(con is GroupBox GB)
+                if (con is GroupBox GB)
                 {
 
                     foreach (Control inner in GB.Controls) // Control in the Group Box 
@@ -77,7 +78,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
                             RB.Checked = false;
 
                         if (inner is CheckBox CB)
-                            CB.Checked = false; 
+                            CB.Checked = false;
                     }
                 }
             }
@@ -92,16 +93,16 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             priceToppingPizza = 0;
             priceCrustPizza = 0;
             priceSizePizza = 0;
-            totalPrice = 0; 
+            totalPrice = 0;
 
-        labelTotalPrice.Text = (totalPrice.ToString()) + '$';
+            labelTotalPrice.Text = (totalPrice.ToString()) + '$';
 
 
         }
-        private void setFormFixedRezizeAndMove ( )
+        private void setFormFixedRezizeAndMove()
         {
 
-            int xWidth = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2; 
+            int xWidth = (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2;
             int yHeight = (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2;
 
             this.Location = new Point(xWidth, yHeight);
@@ -118,17 +119,17 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         {
             if (radioButtonSmall.Checked)
                 priceSizePizza = 5;
-     
+
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceSizePiizaFinal = "Small" ; 
+            choiceSizePiizaFinal = "Small";
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
         private void radioButtonMid_CheckedChanged(object sender, EventArgs e)
         {
-                if (radioButtonMid.Checked)
+            if (radioButtonMid.Checked)
                 priceSizePizza = 10;
-      
+
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
             choiceSizePiizaFinal = "Medium";
@@ -138,11 +139,11 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void radioButtonLarge_CheckedChanged(object sender, EventArgs e)
         {
-              if (radioButtonLarge.Checked)
+            if (radioButtonLarge.Checked)
                 priceSizePizza = 15;
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceSizePiizaFinal = "Large" ;
+            choiceSizePiizaFinal = "Large";
 
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
@@ -160,8 +161,9 @@ namespace Mini_Project___Pizza_Resto_Shodwe
 
         private void FormMainRestochooseThePizzaProperties_Load(object sender, EventArgs e)
         {
+            this.BackgroundImage = Resources.MainMatters1;
             labelTotalPrice.Text = totalPrice.ToString() + "$";
-            buttonOrderNow.BackColor = Color.FromArgb(255, 55, 8, 8); 
+            buttonOrderNow.BackColor = Color.FromArgb(255, 55, 8, 8);
         }
 
         private void radioButtonThinPizza_CheckedChanged(object sender, EventArgs e)
@@ -169,7 +171,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             if (radioButtonThinPizza.Checked) priceCrustPizza = 5;
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            choiceCrustPizza = "Thin"; 
+            choiceCrustPizza = "Thin";
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
@@ -199,7 +201,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             }
 
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
-            
+
             labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
@@ -282,7 +284,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             }
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
 
-            labelTotalPrice.Text = (totalPrice.ToString())+'$';
+            labelTotalPrice.Text = (totalPrice.ToString()) + '$';
         }
 
         private void checkBoxGreenPeppers_CheckedChanged(object sender, EventArgs e)
@@ -297,7 +299,7 @@ namespace Mini_Project___Pizza_Resto_Shodwe
             else
             {
                 priceToppingPizza -= 4;
-                choiceToppingPizza[5] ="";
+                choiceToppingPizza[5] = "";
 
             }
             totalPrice = priceSizePizza + priceCrustPizza + priceToppingPizza;
@@ -321,28 +323,28 @@ namespace Mini_Project___Pizza_Resto_Shodwe
         private void buttonOrderNow_Click(object sender, EventArgs e)
         {
 
-            FormFinalBilling FinalBillingForm = new FormFinalBilling(choiceSizePiizaFinal , choiceCrustPizza , choiceToppingPizza ,  choiceWhereToEatPizza , totalPrice.ToString() , this);
+            FormFinalBilling FinalBillingForm = new FormFinalBilling(choiceSizePiizaFinal, choiceCrustPizza, choiceToppingPizza, choiceWhereToEatPizza, totalPrice.ToString(), this);
 
             FinalBillingForm.ShowDialog();
-             setInitControlsFoodRestuarnt();
+            setInitControlsFoodRestuarnt();
         }
 
         private void radioButtonEatIn_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButtonEatIn.Checked)
-                choiceWhereToEatPizza = "Eat In" ;
-          
+                choiceWhereToEatPizza = "Eat In";
+
 
         }
 
-  
+
 
         private void radioButtonTakeOut_CheckedChanged(object sender, EventArgs e)
         {
-               if (radioButtonTakeOut.Checked)
+            if (radioButtonTakeOut.Checked)
                 choiceWhereToEatPizza = "Take Out";
         }
 
-       
+
     }
 }

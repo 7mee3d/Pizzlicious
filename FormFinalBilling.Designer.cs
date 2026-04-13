@@ -41,8 +41,8 @@
             this.buttonCheakOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.labelTotalPriceBilling = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.notifyIconCheckOutOrder = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,6 +173,13 @@
             this.labelTotalPriceBilling.Size = new System.Drawing.Size(0, 23);
             this.labelTotalPriceBilling.TabIndex = 0;
             // 
+            // notifyIconCheckOutOrder
+            // 
+            this.notifyIconCheckOutOrder.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIconCheckOutOrder.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconCheckOutOrder.Icon")));
+            this.notifyIconCheckOutOrder.Text = "notifyIcon1";
+            this.notifyIconCheckOutOrder.Visible = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -186,13 +193,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // notifyIconCheckOutOrder
-            // 
-            this.notifyIconCheckOutOrder.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.notifyIconCheckOutOrder.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconCheckOutOrder.Icon")));
-            this.notifyIconCheckOutOrder.Text = "notifyIcon1";
-            this.notifyIconCheckOutOrder.Visible = true;
             // 
             // FormFinalBilling
             // 

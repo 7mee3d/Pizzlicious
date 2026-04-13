@@ -354,7 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackgroundImage = global::Pizzlicious.Properties.Resources.MainMatters;
+            this.BackgroundImage = global::Pizzlicious.Properties.Resources.MainMatters1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1528, 860);
             this.Controls.Add(this.pictureBoxBackPrevPage);

@@ -24,3 +24,46 @@ Green Pappers
 
 -----------------------------++-----------------------------
 
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 11/1/2025 12:40:24 PM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : 
++ Crust Type Pizza : 
++ Where Eat Pizza : 
++ Price This Order = 0
++ Toggings : No Toppings
+-----------------------------++-----------------------------
+
+
+
+
+
+
+--------------------- +Order Pizza+ -----------------------
+
+                     - Order .NO : 1
+
+       - Date Time Order : 4/13/2026 10:49:58 AM
+
+---------------------- +Info Order+ -----------------------
+
++ Size Pizza : Large
++ Crust Type Pizza : Thin
++ Where Eat Pizza : Eat In
++ Price This Order = 31
++ Toggings : Olives
+Tomatoes
+Green Pappers
+
+-----------------------------++-----------------------------
+

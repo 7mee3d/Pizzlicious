@@ -93,9 +93,9 @@ namespace Pizzlicious.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MainMatters {
+        internal static System.Drawing.Bitmap MainMatters1 {
             get {
-                object obj = ResourceManager.GetObject("MainMatters", resourceCulture);
+                object obj = ResourceManager.GetObject("MainMatters1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

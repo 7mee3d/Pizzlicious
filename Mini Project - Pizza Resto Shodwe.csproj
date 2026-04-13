@@ -106,9 +106,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Form Final Billl2 .png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\reply1.png" />
     <None Include="Resources\user-guide.png" />
     <None Include="Resources\right-arrow %281%29.png" />
@@ -118,6 +115,9 @@
     <None Include="bin\Debug\Pizzlicious\MainMatters.png" />
     <None Include="bin\Debug\Pizzlicious\TabelMenu.png" />
     <None Include="bin\Debug\Pizzlicious\WelcomePage.png" />
+    <None Include="Image Pizzlicious\WelcomePage.png" />
+    <None Include="Image Pizzlicious\FinalBilling.png" />
+    <None Include="Image Pizzlicious\MainMatters.png" />
     <Content Include="pizzaIcon.ico" />
     <None Include="Resources\reply.png" />
   </ItemGroup>
