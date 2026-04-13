@@ -4,6 +4,7 @@
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![.NET Framework](https://img.shields.io/badge/.NET%20Framework-512BD4?style=for-the-badge&logo=.net&logoColor=white)
 ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D7?style=for-the-badge&logo=windows&logoColor=white)
 ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
 
@@ -15,6 +16,11 @@
 Users can select pizza size, crust type, toppings, and dining option — then instantly calculate the total price and **save the order to a text file** with timestamp for permanent record keeping 📂✅.
 
 🎯 Perfect for academic projects, portfolio showcases, or as a foundation for a real restaurant system!
+
+**You can watch the full project explanation in the video:**
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=eJkE0VAz6jA)
+
 
 ---
 
